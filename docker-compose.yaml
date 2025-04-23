@@ -1,0 +1,10 @@
+version: '3'
+services:
+  fosterapp-salesite:
+    container_name: fosterapp-salesite
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: runner
+    ports:
+      - "2901:3000"
