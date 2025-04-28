@@ -39,11 +39,15 @@ export function remToPx(value: any) {
 }
 
 export function pxToRem(value: any) {
+  
   return `${value / 16}rem`;
 }
 
 export function responsiveFontSizes({ sm, md, lg }: any) {
   return {
+    "@media (max-width:599px)": {
+      fontSize: pxToRem(sm),
+    },
     "@media (min-width:600px)": {
       fontSize: pxToRem(sm),
     },

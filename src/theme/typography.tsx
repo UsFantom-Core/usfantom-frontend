@@ -1,6 +1,6 @@
 import { pxToRem, responsiveFontSizes } from "../utils/getFontValue";
 
-const FONT_PRIMARY = "'Outfit', sans-serif"; // Google Font
+const FONT_PRIMARY = '"Segoe UI", sans-serif'
 // const FONT_SECONDARY = 'CircularStd, sans-serif'; // Local Font
 
 const typography = {
@@ -11,31 +11,31 @@ const typography = {
   h1: {
     fontWeight: 700,
     lineHeight: 80 / 64,
-    fontSize: pxToRem(74),
+    fontSize: pxToRem(48),
     letterSpacing: 2,
-    ...responsiveFontSizes({ sm: 52, md: 58, lg: 64 }),
+    ...responsiveFontSizes({ sm: 30, md: 30, lg: 48 }),
   },
   h2: {
     fontWeight: 700,
     lineHeight: 64 / 48,
-    fontSize: pxToRem(32),
-    ...responsiveFontSizes({ sm: 40, md: 44, lg: 48 }),
+    fontSize: pxToRem(36),
+    ...responsiveFontSizes({ sm: 24, md: 20, lg: 36 }),
   },
   h3: {
     fontWeight: 600,
     lineHeight: 1.5,
     fontSize: pxToRem(24),
-    ...responsiveFontSizes({ sm: 26, md: 30, lg: 32 }),
+    ...responsiveFontSizes({ sm: 16, md: 20, lg: 24 }),
   },
   h4: {
     fontWeight: 600,
     lineHeight: 1.5,
     fontSize: pxToRem(20),
-    ...responsiveFontSizes({ sm: 20, md: 24, lg: 24 }),
+    ...responsiveFontSizes({ sm: 16, md: 16, lg: 18 }),
   },
   h5: {
     fontWeight: 600,
-    lineHeight: 1.5,
+    lineHeight: 2,
     fontSize: pxToRem(18),
     ...responsiveFontSizes({ sm: 19, md: 20, lg: 20 }),
   },
