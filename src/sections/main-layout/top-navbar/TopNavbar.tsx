@@ -86,8 +86,6 @@ export default function TopNavbar() {
             </ListItemButton>
           </ListItem>
         ))}
-      
-       
       </List>
     </Box>
   );
@@ -123,7 +121,6 @@ export default function TopNavbar() {
                   href={item.link}
                   key={item.id}
                   style={{
-                    textDecoration: "none",
                     marginRight: index !== item.length - 1 ? "50px" : "0",
                   }}
                 >
@@ -131,33 +128,28 @@ export default function TopNavbar() {
                     sx={{
                       fontWeight: pathname === item.link ? 600 : 600,
                       fontSize: { xs: "15px", lg: "15px", xl: "18px" },
-                      color: pathname === item.link ? "#F02D46" : "white",
+                      color: pathname === item.link ? "black" : "white",
+                      padding: "0px 18px",
+                      textTransform: "capitalize",
+                      border: "1px solid transparent",
                       "&:hover": {
-                        backgroundColor: "#b02D46",
-                        color: "#F02D46,",
+                        color: "transparent",
+                        border:
+                          "1px solid linear-gradient(90deg, #0894F8 0%, #41D7D0 100%)",
+                        backgroundImage:
+                          "linear-gradient(90deg, #0894F8, #41D7D0)",
+                        backgroundClip: "text",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
                       },
                     }}
+                    variant="outlined"
                   >
                     {item.title}
                   </Button>
                 </Link>
               ))}
             </Box>
-            {/* <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <Link href={"/"} style={{ textDecoration: "none" }}>
-                <Typography variant="subtitle2" sx={styles.contactButton}>
-                  Become an Excort
-                </Typography>
-              </Link>
-              <Link
-                href={"/"}
-                style={{ textDecoration: "none" }}
-              >
-                <Typography variant="subtitle2" sx={styles.contactButton}>
-                  Logout
-                </Typography>
-              </Link>
-            </Box> */}
           </Box>
         </Toolbar>
       </AppBar>
@@ -188,7 +180,7 @@ const styles: any = {
     margin: { md: "10px 0", lg: 0 },
   },
   appBarStyling: (theme: any) => ({
-    py: 2.5,
+    py: 1,
     background: "#000000",
     position: "sticky",
     boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",

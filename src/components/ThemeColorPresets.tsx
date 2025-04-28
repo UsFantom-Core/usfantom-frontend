@@ -28,9 +28,7 @@ export default function ThemeColorPresets({
         ...defaultTheme.palette,
         primary: setColor,
       },
-      typography: {
-        fontFamily: 'Segoe UI',
-      },
+      
       customShadows: {
         ...defaultTheme.customShadows,
         primary: `0 8px 16px 0 ${alpha(setColor.main, 0.24)}`,

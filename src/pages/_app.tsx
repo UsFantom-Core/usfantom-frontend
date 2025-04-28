@@ -38,7 +38,7 @@ import ThemeColorPresets from "@root/components/ThemeColorPresets";
 import ThemeLocalization from "@root/components/ThemeLocalization";
 import RtlLayout from "@root/components/RtlLayout";
 import { useRouter } from "next/router";
-
+import '../styles/globals.css'
 function MyApp(props: any) {
   const { Component, pageProps, settings } = props;
   const router = useRouter();

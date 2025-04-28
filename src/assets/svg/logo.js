@@ -16,7 +16,7 @@ export default function Logo({
 
   return (
     <Box {...other}>
-   <Image src={CoverLogo} alt={"CoverLogo"} style={{width:"220px",height:"65px"}}/>
+   <Image src={CoverLogo} alt={"CoverLogo"} style={{width:"250px",height:"auto"}}/>
     </Box>
   );
 }

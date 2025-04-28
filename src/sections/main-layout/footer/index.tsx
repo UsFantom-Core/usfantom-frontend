@@ -7,37 +7,27 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
+import DiscordIcon from "@root/assets/svg/discord";
+
 
 export const learnMoreItems = [
   {
     id: 1,
-    title: `About Lift`,
+    href :"",
+    title: `About`,
     icon: <LocationOnOutlinedIcon sx={{ fontSize: "22px" }} />,
   },
   {
     id: 2,
-    title: `Press`,
+    href :"https://discord.gg/usfantom",
+    title: `Discord`,
     icon: <PhoneInTalkOutlinedIcon sx={{ fontSize: "22px" }} />,
   },
   {
     id: 3,
-    title: `Releases`,
+    href :"",
+    title: `Contact`,
     icon: <EmailOutlinedIcon sx={{ fontSize: "22px" }} />,
-  },
-  {
-    id: 4,
-    title: "Environment",
-    icon: <AccessTimeOutlinedIcon sx={{ fontSize: "22px" }} />,
-  },
-  {
-    id: 5,
-    title: "Jobs",
-    icon: <AccessTimeOutlinedIcon sx={{ fontSize: "22px" }} />,
-  },
-  {
-    id: 6,
-    title: "Privacy Policy",
-    icon: <AccessTimeOutlinedIcon sx={{ fontSize: "22px" }} />,
   },
 ];
 export const addressItems = [
@@ -64,30 +54,16 @@ export const addressItems = [
 ];
 
 export const socialLinks = [
-  {
-    id: 1,
-    link: "https://www.facebook.com/fosterappuk",
-    icon: <FacebookOutlinedIcon />,
-  },
+ 
   {
     id: 2,
-    link: "",
+    link: "/",
     icon: <LocalPostOfficeIcon />,
   },
   {
-    id: 3,
-    link: "https://twitter.com/FosterApp05",
-    icon: <TwitterIcon />,
-  },
-  {
-    id: 4,
-    link: "https://www.instagram.com/_fosterapp_/?hl=en",
-    icon: <InstagramIcon />,
-  },
-  {
     id: 5,
-    link: "https://www.linkedin.com/company/fosterappuk/",
-    icon: <LinkedInIcon />,
+    link: "https://discord.gg/usfantom",
+    icon: <DiscordIcon />,
   },
 ];
 

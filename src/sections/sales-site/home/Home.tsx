@@ -28,7 +28,8 @@ import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowLeftIcon, ArrowRightIcon } from "@mui/x-date-pickers";
-
+import OrbitAnimation from "@root/components/OrbitAnimation ";
+import GhostAnimation from "@root/components/GhostAnimation";
 
 export var settings = {
   arrows: true,
@@ -442,7 +443,22 @@ const Home = () => {
 
             {/* </Link> */}
           </Grid>
-        
+          <Grid
+            item
+            xs={12}
+            lg={6}
+            sx={{
+              display: { xs: "none", sm: "flex" },
+              justifyContent: "center",
+            }}
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+          >
+            <OrbitAnimation />
+          </Grid>
         </Grid>
 
         {/*  section 5 */}
